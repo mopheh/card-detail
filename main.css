@@ -1,0 +1,247 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+form label {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: hsl(278, 68%, 11%);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.gap-2 .btn.btn-primary {
+  background-color: hsl(278, 68%, 11%);
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  border: 0;
+  font-weight: 600;
+}
+.left-screen {
+  height: 100vh;
+  width: 30%;
+  background-image: url("./images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+::placeholder {
+  color: hsl(270, 3%, 87%) !important;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: initial;
+}
+.card-holder {
+  width: 30%;
+}
+
+#validationCustomMonth {
+  margin-right: 6px;
+}
+
+#validationCustomYear {
+  margin-left: 6px;
+}
+.form-control {
+  color: hsl(278, 68%, 11%);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.form-control:hover {
+  cursor: pointer;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: hsl(278, 68%, 11%);
+  outline: none;
+}
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-image: none;
+}
+.bg-card-front {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  color: hsl(0, 0%, 100%);
+  width: 450px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/bg-card-front.png");
+}
+
+.bg-card-front h3 {
+  position: absolute;
+  bottom: 25%;
+  font-size: 1.675rem;
+  letter-spacing: 2.5px;
+  left: 11%;
+}
+
+.bg-card-front .w-100 {
+  justify-content: space-around;
+  bottom: 12%;
+}
+
+.bg-card-front .w-100 h5 {
+  font-size: 0.825rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.bg-card-back {
+  position: absolute;
+  top: 52%;
+  color: hsl(0, 0%, 100%);
+  left: 17%;
+  width: 450px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./images/bg-card-back.png");
+}
+.bg-card-back span {
+  position: absolute;
+  right: 15%;
+  letter-spacing: 1px;
+  font-size: 14px;
+  top: 43.5%;
+  font-weight: 700;
+}
+.circle {
+  width: 50px;
+  border-radius: 50%;
+  margin: 5% 1% 1% 8%;
+  height: 50px;
+  background-color: hsl(0, 0%, 100%);
+}
+.outline-circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  margin-top: 5%;
+  border-radius: 50%;
+}
+.card-holder-name {
+  text-transform: uppercase;
+}
+@media (max-width: 1210px) {
+  .card-holder {
+    width: 35%;
+  }
+  .bg-card-back,
+  .bg-card-front {
+    width: 430px;
+    height: 230px;
+  }
+  .bg-card-front {
+    left: 5%;
+  }
+  .bg-card-back {
+    left: 10%;
+  }
+}
+@media (max-width: 1000px) {
+  .card-holder {
+    width: 40%;
+    margin-right: 10% !important;
+  }
+  .bg-card-back,
+  .bg-card-front {
+    width: 400px;
+    height: 200px;
+  }
+  .bg-card-front h3 {
+    left: 5%;
+  }
+  .bg-card-back {
+    top: 45%;
+  }
+  .bg-card-back span {
+    right: 20%;
+  }
+}
+@media (max-width: 650px) {
+  .bg-card-front .w-100 {
+    width: 95% !important;
+  }
+  .circle {
+    width: 45px;
+    height: 45px;
+  }
+  .bg-card-back,
+  .bg-card-front {
+    width: 350px;
+    height: 180px;
+  }
+  .left-screen {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15%;
+  }
+  .bg-card-back {
+    left: inherit;
+    right: 2%;
+    top: 5%;
+  }
+  .bg-card-front {
+    z-index: 1;
+  }
+  .bg-card-front h3 {
+    left: 12%;
+    font-size: 1.2rem;
+  }
+  .card-holder {
+    margin-top: 20%;
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .row > * {
+    margin-top: 0.675rem;
+  }
+  .left-screen {
+    height: 220px;
+    margin-bottom: 5%;
+  }
+  .bg-card-front .w-100 h5 {
+    font-size: 0.675rem;
+  }
+  .bg-card-back,
+  .bg-card-front {
+    width: 300px;
+    height: 150px;
+  }
+  .bg-card-back {
+    right: 0;
+  }
+  .circle {
+    width: 35px;
+    height: 35px;
+  }
+  .bg-card-front {
+    top: 17.5%;
+  }
+  .outline-circle {
+    width: 15px;
+    height: 15px;
+  }
+  .bg-card-front h3 {
+    font-size: 1rem;
+  }
+  .bg-card-back span {
+    top: 42.5%;
+  }
+}
+.complete-modal h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.attribution {
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+}
+.attribution a {
+  text-decoration: none;
+}

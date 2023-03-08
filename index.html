@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0">
+    <div class="d-md-flex d-sm-block position-relative">
+      <div class="left-screen">
+        <div class="bg-card-front">
+          <div class="d-flex align-items-center">
+            <div class="circle"></div>
+            <div class="outline-circle"></div>
+          </div>
+          <h3 class="card-number">1234 5678 9123 0000</h3>
+          <div class="d-flex w-100 position-absolute">
+            <h5 class="card-holder-name">Jane Fieldset</h5>
+            <h5><span>00</span>/<span>00</span></h5>
+          </div>
+        </div>
+        <div class="bg-card-back">
+          <span>000</span>
+        </div>
+      </div>
+      <div class="p-5 card-holder m-auto card-form">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <label for="validationCustom01" class="form-label"
+              >Cardholder Name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              placeholder="e.g. JANE APPLESEED"
+              required
+            />
+            <div class="invalid-feedback">Can't be blank</div>
+          </div>
+          <div class="col-md-12 card-num-input">
+            <label for="validationCustom02" class="form-label"
+              >Card Number</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              placeholder="e.g. 1234 5678 9123 0000"
+              required
+            />
+            <div class="invalid-feedback">Can't be blank</div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustomUsername" class="form-label"
+              >Exp. Date (MM/YY)</label
+            >
+            <div class="input-group has-validation">
+              <input
+                type="text"
+                class="form-control rounded"
+                id="validationCustomMonth"
+                placeholder="MM"
+                required
+              />
+              <input
+                type="text"
+                class="form-control rounded"
+                id="validationCustomYear"
+                placeholder="YY"
+                required
+              />
+              <div class="invalid-feedback">Can't be blank</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">CVV</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              placeholder="e.g. 123"
+              required
+            />
+            <div class="invalid-feedback">Can't be blank</div>
+          </div>
+
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary py-2" type="submit">Confirm</button>
+          </div>
+        </form>
+      </div>
+      <div class="complete-modal p-5 card-holder m-auto d-none">
+        <div class="text-center">
+          <img
+            src="./images/icon-complete.svg"
+            class="my-2"
+            alt="complete-logo"
+          />
+          <h4>Thank you!</h4>
+          <p>We've added your card details</p>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary py-2" type="submit">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    
+
+   Completed state start -->
+
+    <!--   Continue -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="http://github.com/mopheh">mopheh</a>.
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</html>
